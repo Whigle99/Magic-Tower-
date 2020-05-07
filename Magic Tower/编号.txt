@@ -1,0 +1,16 @@
+# starrySky=0,wall=1,ground=2,lava=3,block=4
+up = 11
+down = 12
+rD = 21  # red blue yellow doors
+bD = 23
+yD = 25
+rK = 22  # red blue yellow keys
+bK = 24
+yK = 26
+rHP = 41
+bHP = 42
+ATK = 45
+DEF = 46
+
+#npc
+fairy=61
