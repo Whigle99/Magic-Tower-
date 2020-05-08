@@ -1,0 +1,20 @@
+<!--pages/pinglun.wxml-->
+<view class='container'>
+<view class="cover_screen" bindtap="hideBuyModal" wx:if="{{showModalStatus}}"></view>
+<!-- 点击详情 弹窗 -->
+<view animation="{{animationData}}" class="buy_box" wx:if="{{showModalStatus}}">
+        <text style='padding-right:40rpx;'>在这里发布评论\n</text>
+        <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+    <button type="primary"  bindtap='hideBuyModal'> 发布 </button>
+</view>
+  
+ <view class='sheet' wx:for = "{{axis}}" wx:key = "index" >
+
+<view class='question'>张三</view>
+<view class='question'>发表时间：</view>
+<view class='question'>游戏做的非常好，值得玩</view>
+ <image class='right-img' src="/pages/pinglun/right.png"></image>
+ 
+</view>
+<image class='bottom-img' src="/img/添加.png" bindtap="showBuyModal"></image>
+</view>

@@ -1,0 +1,44 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+  <view class="userinfo" bindtap="goAuth">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+  </view>
+    <image src="https://7065-pet-real-1301063915.tcb.qcloud.la/public/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <button class="cu-btn content" bindtap="scan">
+        <text class="cuIcon-scan text-yellow"></text>
+        <text class="text-black" style="font-weight:normal;">扫一扫</text>
+      </button>
+    </view>
+     <view class="cu-item arrow">
+      <button class="cu-btn content" bindtap="goHelp">
+        <text class="cuIcon-question text-blue"></text>
+        <text class="text-black" style="font-weight:normal;">帮助中心</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="contact" bindcontact="handleContact">
+        <text class="cuIcon-servicefill text-cyan"></text>
+        <text class="text-black" style="font-weight:normal;">联系客服</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-grey"></text>
+        <text class="text-black" style="font-weight:normal;">意见反馈</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" data-name="shareBtn" open-type="share">
+        <text class="cuIcon-share text-green"></text>
+        <text class="text-black" style="font-weight:normal;">分享好友</text>
+      </button>
+    </view>
+  </view>
+</scroll-view>
+<!-- 登录弹窗 -->
+<auth is-show="{{isShowAuth}}" bind:onAuthEvent="onAuthEvent"></auth>

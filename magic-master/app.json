@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/sprite/index",
+    "pages/filter/index",
+    "pages/filterout/index",
+    "pages/resist/index",
+    "pages/abilitydetail/index",
+    "pages/logs/logs",
+    "pages/info/index",
+    "pages/pinglun/pinglun"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0066FF",
+    "navigationBarTitleText": "POKEMON",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EFEFF4"
+  },
+  "tabBar": {
+    "color": "#B2B2B2",
+    "selectedColor": "#353535",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "怪物图鉴",
+        "iconPath": "/img/1.png",
+        "selectedIconPath": "/img/2.png"
+      },
+      {
+        "pagePath": "pages/pinglun/pinglun",
+        "text": "讨论",
+        "iconPath": "/img/1.png",
+        "selectedIconPath": "/img/2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "/img/icon_tabbar_info_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_info_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
